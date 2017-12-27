@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script>
+		// let [a, b, c] = new Set(['a', 'b', 'c']);
+		// console.log(a);
+		// console.log(b);
+		// console.log(c);
+
+		function* fibs() {
+			let a = 0;
+			let b = 1;
+			while (true) {
+				yield a;
+				[a, b] = [b, a + b];
+			}
+		}
+
+		var [first, second, third, fourth, fifth, sixth] = fibs();
+		console.log(first);
+		console.log(second);
+		console.log(sixth);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// function fn () {
+		// 	console.log('I am outside!');
+		// }
+		// (function () {
+		// 	if (false) {
+		// 		function fn () {
+		// 			console.log('I am inside!');
+		// 		}
+		// 	}
+			
+		// 	fn();
+		// }());
+	</script>
+
+	<script>
+		function fn() {
+			console.log('I am outside!');
+		}
+		{
+			if (false) {
+				function fn() {
+					console.log('I am inside!');
+				}
+			}
+
+			fn();
+		}
+	</script>
+</body>
+</html>

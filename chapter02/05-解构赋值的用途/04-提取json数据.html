@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script>
+		var jsonData = {
+			id: '007',
+			name: 'ksm',
+			age: 18,
+			score: {
+				Chinese: 98,
+				English: 99,
+				Math: 100
+			}
+		};
+		// console.log(jsonData);
+		let {id: number, name, age, score: score} = jsonData;
+		console.log(number);
+		console.log(age);
+		console.log(score.Math);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
